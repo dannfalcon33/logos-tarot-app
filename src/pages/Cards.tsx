@@ -1,13 +1,14 @@
 import { Hero } from "../components/ui/Hero";
-import cardsImg from "../assets/images/cards_hero.png";
+import { CARDS_CONTENT } from "../constants";
 
 export const Cards = () => {
+  const { hero } = CARDS_CONTENT;
   return (
     <Hero
-      title="The Cards"
-      subtitle="Major & Minor Arcana"
-      image={cardsImg}
-      description="Each card is a window into a different dimension of the human experience. Browse our collection of 78 cards, reimagined with cosmic imagery to reflect universal archetypes."
+      title={hero.title}
+      subtitle={hero.subtitle}
+      image={hero.image}
+      description={hero.description}
     />
   );
 };

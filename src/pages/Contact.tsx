@@ -1,13 +1,14 @@
 import { Hero } from "../components/ui/Hero";
-import contactImg from "../assets/images/contact_hero.png";
+import { CONTACT_CONTENT } from "../constants";
 
 export const Contact = () => {
+  const { hero } = CONTACT_CONTENT;
   return (
     <Hero
-      title="Contact"
-      subtitle="Reach Out"
-      image={contactImg}
-      description="Do you have questions about your reading? Or perhaps you wish to commission a custom spread? Send a signal across the cosmos, and we will respond."
+      title={hero.title}
+      subtitle={hero.subtitle}
+      image={hero.image}
+      description={hero.description}
     />
   );
 };

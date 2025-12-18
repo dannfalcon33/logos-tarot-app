@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
+import { NAV_ITEMS } from "../../constants";
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,18 +19,10 @@ export const Header = () => {
     },
   };
 
-  const navItems = [
-    { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
-    { name: "Guide", path: "/guide" },
-    { name: "Cards", path: "/cards" },
-    { name: "Contact", path: "/contact" },
-  ];
-
   return (
     <>
       <header className="fixed top-0 w-full z-50 flex justify-between items-center px-8 py-4 bg-opacity-10 backdrop-blur-md border-white/10">
-        <Link to="/" className="text-3xl font-bold tracking-widest uppercase">
+        <Link to="/" className="text-2xl font-bold tracking-widest uppercase">
           <span className="text-gold-gradient">Logos Tarot</span>
         </Link>
 
@@ -71,7 +64,7 @@ export const Header = () => {
               variants={menuVariants}
               className="fixed top-0 right-0 h-full w-[80%] md:w-[35%] bg-[#0B0B1E]/95 border-l border-white/10 z-50 flex flex-col items-center justify-center space-y-8 backdrop-blur-xl"
             >
-              {navItems.map((item) => (
+              {NAV_ITEMS.map((item) => (
                 <Link
                   key={item.name}
                   to={item.path}

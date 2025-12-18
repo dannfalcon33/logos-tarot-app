@@ -78,8 +78,8 @@ export const Hero = ({
           )}
 
           {showCta && (
-            <div className="pt-8">
-              <Button>Begin Your Journey</Button>
+            <div className="pt-4">
+              <Button>Get Started</Button>
             </div>
           )}
         </div>
