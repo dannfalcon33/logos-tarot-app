@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap");
+@import "tailwindcss";
+
+:root {
+  --color-gold: #ffd700;
+  --color-gold-light: #fdb931;
+  --color-space-dark: #0b0b1e;
+  --color-space-light: #1a1a2e;
+  --font-fantasy: "Cinzel", serif; /* Assuming we'll add this font */
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: var(--color-space-dark);
+  color: white;
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.text-gold-gradient {
+  background: linear-gradient(
+    to right,
+    #bf953f,
+    #fcf6ba,
+    #b38728,
+    #fbf5b7,
+    #aa771c
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 200% auto;
+  animation: shine 5s linear infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+}
