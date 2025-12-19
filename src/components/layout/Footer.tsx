@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom";
-import { NAV_ITEMS, FOOTER_CONTENT } from "../../constants";
+import { FOOTER_CONTENT } from "../../constants";
 
 export const Footer = () => {
   return (
@@ -8,17 +7,6 @@ export const Footer = () => {
         <h3 className="text-gold-gradient text-xl font-bold tracking-widest uppercase">
           {FOOTER_CONTENT.title}
         </h3>
-        <div className="flex gap-4">
-          {NAV_ITEMS.map((item) => (
-            <Link
-              key={item.name}
-              to={item.path}
-              className="text-white hover:text-yellow-400 transition-colors"
-            >
-              {item.name}
-            </Link>
-          ))}
-        </div>
         <p className="text-gray-400 text-sm">{FOOTER_CONTENT.copyright}</p>
       </div>
     </footer>
