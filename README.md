@@ -49,3 +49,7 @@ Para correr este proyecto localmente:
 - TypeScript
 - Tailwind CSS
 - Framer Motion
+
+## Live Demo
+
+https://logostarot.netlify.app/
