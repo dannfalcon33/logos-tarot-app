@@ -1,5 +1,7 @@
 # Logos Tarot App
 
+![Logos Tarot App](screen.png)
+
 ## Descripción
 
 Logos Tarot es una aplicación interactiva diseñada para ofrecer una experiencia espiritual profunda y accesible. Combina la sabiduría ancestral del Tarot con la tecnología moderna de inteligencia artificial.
