@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, type Variants } from "framer-motion";
 import { Link } from "react-router-dom";
 import { NAV_ITEMS } from "../../constants";
 
@@ -8,7 +8,7 @@ export const Header = () => {
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
-  const menuVariants = {
+  const menuVariants: Variants = {
     closed: {
       x: "100%",
       transition: { type: "spring", stiffness: 300, damping: 30 },

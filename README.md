@@ -1,73 +1,49 @@
-# React + TypeScript + Vite
+# Logos Tarot App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción
 
-Currently, two official plugins are available:
+Logos Tarot es una aplicación interactiva diseñada para ofrecer una experiencia espiritual profunda y accesible. Combina la sabiduría ancestral del Tarot con la tecnología moderna de inteligencia artificial.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Funcionalidades Principales
 
-## React Compiler
+### 🔮 Lecturas de Tarot con IA
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Utiliza **Lyra AI** para interpretar tus tiradas de cartas, ofreciendo lecturas personalizadas y profundas que te ayudarán a entender mejor tu camino.
 
-## Expanding the ESLint configuration
+### 🃏 Mazo Interactivo
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Explora un mazo de tarot visualmente impresionante con animaciones fluidas y efectos visuales de alta calidad.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### ✨ Experiencia Inmersiva
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Diseñada con un enfoque estético premium, utilizando:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **Framer Motion** para animaciones suaves.
+- **Tailwind CSS** para un diseño moderno y responsivo.
+- Efectos de sonido y visuales para una atmósfera mística.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Instalación y Ejecución
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Para correr este proyecto localmente:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. Clonar el repositorio.
+2. Instalar dependencias:
+   ```bash
+   npm install
+   ```
+3. Iniciar el servidor de desarrollo:
+   ```bash
+   npm run dev
+   ```
+4. Construir para producción:
+   ```bash
+   npm run build
+   ```
+
+## Tecnologías
+
+- Vite
+- React
+- TypeScript
+- Tailwind CSS
+- Framer Motion
