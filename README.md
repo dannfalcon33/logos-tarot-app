@@ -53,3 +53,7 @@ Para correr este proyecto localmente:
 ## Live Demo
 
 https://logostarot.netlify.app/
+
+##
+
+![Falcon Studio Dev](mark.png)
