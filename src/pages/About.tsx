@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { Hero } from "../components/ui/Hero";
 import { ABOUT_CONTENT } from "../constants";
 import { DownloadSection } from "../components/ui/DownloadSection";
@@ -59,11 +59,6 @@ const CardStack = () => {
         // When index increases, old top card becomes "last" (or hidden) and new top card slides in?
         // User request: "se pasan una a una, una pasa detras de la otra"
         // This usually means Top Card slides off, then re-appears at bottom.
-
-        const isTop = i === index;
-        const isSecond = i === (index + 1) % CARD_IMAGES.length;
-        const isThird = i === (index + 2) % CARD_IMAGES.length;
-        const isFourth = i === (index + 3) % CARD_IMAGES.length;
 
         // We only render active ones to save resources and manage z-index easily?
         // No, render all to keep DOM stable, just hide others.
